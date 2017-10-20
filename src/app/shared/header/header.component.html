@@ -1,3 +1,8 @@
 <mat-toolbar color="primary" class="mat-elevation-z6">
   <span>Ditto</span>
+
+  <span class="fill"></span>
+
+  <button *ngIf="!loggedIn" mat-button (click)="doLogin()">Login</button>
+  <button *ngIf="loggedIn" mat-button (click)="doLogout()">Logout</button>
 </mat-toolbar>
