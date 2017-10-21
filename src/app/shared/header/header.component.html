@@ -3,6 +3,9 @@
 
   <span class="fill"></span>
 
-  <button *ngIf="!loggedIn" mat-button (click)="doLogin()">Login</button>
-  <button *ngIf="loggedIn" mat-button (click)="doLogout()">Logout</button>
+  <app-profile-menu *ngIf="isLoggedIn$ | async; else login"></app-profile-menu>
+
+  <ng-template #login>
+    <button type="button" mat-button (click)="doLogin()" class="login-button">Login</button>
+  </ng-template>
 </mat-toolbar>
