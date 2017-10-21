@@ -1,37 +1,28 @@
-import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NullValidationHandler, OAuthModule, OAuthService } from 'angular-oauth2-oidc';
+import { OAuthModule } from 'angular-oauth2-oidc';
 
-import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-
-export function initOAuth(oauthService: OAuthService) {
-  oauthService.configure(environment.authConfig);
-  oauthService.tokenValidationHandler = new NullValidationHandler;
-
-  return () => oauthService
-    .tryLogin()
-    .then(() => { location.hash = ''; });
-}
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
+    HttpClientModule,
     OAuthModule.forRoot(),
+    CoreModule.forRoot(),
     SharedModule,
     AppRoutingModule,
   ],
   declarations: [
     AppComponent,
-  ],
-  providers: [
-    { provide: APP_INITIALIZER, useFactory: initOAuth, deps: [OAuthService], multi: true },
   ],
   bootstrap: [
     AppComponent,

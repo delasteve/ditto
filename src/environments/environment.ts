@@ -8,5 +8,6 @@ export const environment: Environment = {
     scope: 'playlist-modify-public playlist-modify-private playlist-read-private user-library-read user-library-modify',
     oidc: false,
     redirectUri: 'http://localhost:4200/',
+    silentRefreshRedirectUri: 'http://localhost:4200/silent-refresh.html',
   },
 };
