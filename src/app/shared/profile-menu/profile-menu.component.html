@@ -1,0 +1,12 @@
+<button type="button" mat-icon-button [matMenuTriggerFor]="profileMenu">
+  <img *ngIf="!!(profileImage$ | async); else defaultProfileImage" src="{{ profileImage$ | async }}" alt="User Profile Image"
+    height="32" width="32" class="rounded-profile-image" aria-hidden="true">
+
+  <ng-template #defaultProfileImage>
+    <mat-icon aria-hidden="true">person</mat-icon>
+  </ng-template>
+</button>
+
+<mat-menu #profileMenu="matMenu" [overlapTrigger]="false">
+  <button type="button" mat-menu-item (click)="doLogout()">Logout</button>
+</mat-menu>

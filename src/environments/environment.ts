@@ -2,6 +2,7 @@ import { Environment } from './environment.interface';
 
 export const environment: Environment = {
   production: false,
+  spotifyApiUrl: 'https://api.spotify.com',
   authConfig: {
     loginUrl: 'https://accounts.spotify.com/authorize',
     clientId: 'bd458c7b0dee489489ce827a1b90e10a',
