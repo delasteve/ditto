@@ -18,4 +18,4 @@ export class SpotifyService {
     return this.http
       .get<UserProfile>(`${environment.spotifyApiUrl}/v1/me`);
   }
-}
+} /* istanbul ignore next: https://github.com/angular/angular-cli/issues/5526 */

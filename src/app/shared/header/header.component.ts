@@ -28,4 +28,4 @@ export class HeaderComponent implements OnInit {
   doLogin() {
     this.store.dispatch(new Login());
   }
-}
+} /* istanbul ignore next: https://github.com/angular/angular-cli/issues/5526 */
