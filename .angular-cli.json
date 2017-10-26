@@ -61,7 +61,9 @@
     "codeCoverage": {
       "exclude": [
         "src/test.ts",
-        "src/polyfills.ts"
+        "src/polyfills.ts",
+        "src/environments/**/*",
+        "test/**/*"
       ]
     }
   },
