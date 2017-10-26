@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "codecov": "codecov"
+
   },
   "private": true,
   "dependencies": {
@@ -42,8 +43,8 @@
     "@types/jasmine": "^2.6.0",
     "@types/jasminewd2": "^2.0.3",
     "@types/node": "~6.0.60",
+    "codecov": "^3.0.0",
     "codelyzer": "^3.2.1",
-    "coveralls": "^3.0.0",
     "jasmine-core": "^2.8.0",
     "jasmine-spec-reporter": "^4.2.1",
     "karma": "^1.7.1",

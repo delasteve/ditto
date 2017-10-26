@@ -18,4 +18,4 @@ export class SpotifyInterceptor implements HttpInterceptor {
 
     return next.handle(req);
   }
-}
+} /* istanbul ignore next: https://github.com/angular/angular-cli/issues/5526 */
