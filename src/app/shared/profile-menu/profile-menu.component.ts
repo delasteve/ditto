@@ -29,7 +29,6 @@ export class ProfileMenuComponent implements OnInit {
   }
 
   doLogout() {
-    console.log('here');
     this.store.dispatch(new Logout());
   }
-}
+} /* istanbul ignore next: https://github.com/angular/angular-cli/issues/5526 */
