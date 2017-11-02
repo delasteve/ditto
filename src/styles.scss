@@ -1,13 +1,9 @@
 @import 'constants';
-
-// Bootstrap Reboot
-$font-family-base: $sans-serif-font-family;
-@import '~bootstrap/scss/bootstrap-reboot';
-
-// Material theme
 @import '~@angular/material/prebuilt-themes/indigo-pink';
 
 body {
+  margin: 0;
+  font-family: $sans-serif-font-family;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
