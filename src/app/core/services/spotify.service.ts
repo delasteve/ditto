@@ -4,7 +4,7 @@ import { OAuthService } from 'angular-oauth2-oidc';
 import { Observable } from 'rxjs/Observable';
 
 import { environment } from '../../../environments/environment';
-import { UserProfile } from '../models/user-profile';
+import { UserProfile } from '../models/spotify/user-profile';
 
 @Injectable()
 export class SpotifyService {
