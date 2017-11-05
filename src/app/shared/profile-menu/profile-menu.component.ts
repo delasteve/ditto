@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 import { filter, map } from 'rxjs/operators';
 
 import { Logout } from '../../core/actions/user.actions';
-import { UserProfile } from '../../core/models/user-profile';
+import { UserProfile } from '../../core/models/spotify/user-profile';
 import { State, selectUserProfile } from '../../core/reducers';
 
 @Component({

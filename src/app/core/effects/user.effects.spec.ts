@@ -7,7 +7,7 @@ import { of } from 'rxjs/observable/of';
 import { MockSpotifyService } from '../../../../test/core/services/spotify.service';
 import { MockOAuthService } from '../../../../test/oauth.service';
 import { LoadProfile, Login, Logout, ProfileLoaded } from '../actions/user.actions';
-import { UserProfile } from '../models/user-profile';
+import { UserProfile } from '../models/spotify/user-profile';
 import { SpotifyService } from '../services/spotify.service';
 import { UserEffects } from './user.effects';
 

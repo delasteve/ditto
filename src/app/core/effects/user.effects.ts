@@ -9,7 +9,7 @@ import {
   LOGOUT,
   ProfileLoaded,
 } from '../actions/user.actions';
-import { UserProfile } from '../models/user-profile';
+import { UserProfile } from '../models/spotify/user-profile';
 import { SpotifyService } from '../services/spotify.service';
 
 @Injectable()

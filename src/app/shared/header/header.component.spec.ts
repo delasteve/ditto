@@ -6,7 +6,7 @@ import { Store, StoreModule } from '@ngrx/store';
 import { OAuthService } from 'angular-oauth2-oidc';
 
 import { Login, ProfileLoaded } from '../../core/actions/user.actions';
-import { UserProfile } from '../../core/models/user-profile';
+import { UserProfile } from '../../core/models/spotify/user-profile';
 import { State, reducers } from '../../core/reducers';
 import { HeaderComponent } from './header.component';
 
