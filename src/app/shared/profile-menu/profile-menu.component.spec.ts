@@ -3,7 +3,7 @@ import { MatIconModule, MatMenuModule } from '@angular/material';
 import { Store, StoreModule } from '@ngrx/store';
 
 import { Logout, ProfileLoaded } from '../../core/actions/user.actions';
-import { UserProfile } from '../../core/models/user-profile';
+import { UserProfile } from '../../core/models/spotify/user-profile';
 import { State, reducers } from '../../core/reducers';
 import { ProfileMenuComponent } from './profile-menu.component';
 

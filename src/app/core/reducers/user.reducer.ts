@@ -1,7 +1,7 @@
 import { Action } from '@ngrx/store';
 
 import * as UserActions from '../actions/user.actions';
-import { UserProfile } from '../models/user-profile';
+import { UserProfile } from '../models/spotify/user-profile';
 
 export interface State {
   profile: UserProfile | null;

@@ -1,6 +1,6 @@
 import { Action } from '@ngrx/store';
 
-import { UserProfile } from '../models/user-profile';
+import { UserProfile } from '../models/spotify/user-profile';
 
 export const LOGIN = '[User] Login';
 export const LOGOUT = '[User] Logout';
