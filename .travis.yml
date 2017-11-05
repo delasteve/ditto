@@ -1,13 +1,14 @@
 dist: trusty
 sudo: false
 
+language: node_js
+
 node_js:
   - "6"
+  - "8"
 
 addons:
   chrome: stable
-
-language: node_js
 
 cache:
   directories:
@@ -17,10 +18,9 @@ before_install:
   - npm install -g npm@^5
 
 install:
-  - npm install -g @angular/cli
   - npm install
 
 script:
-  - ng lint --type-check
-  - ng test -sr --code-coverage --no-progress
+  - npm run lint
+  - npm run test -- --single-run --code-coverage --no-progress
   - npm run codecov
