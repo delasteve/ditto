@@ -3,9 +3,9 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import { filter, map } from 'rxjs/operators';
 
-import { Logout } from '../../core/actions/user.actions';
-import { UserProfile } from '../../core/models/spotify/user-profile';
-import { State, selectUserProfile } from '../../core/reducers';
+import { Logout } from '../../actions/user.actions';
+import { UserProfile } from '../../models/spotify/user-profile';
+import { State, selectUserProfile } from '../../reducers';
 
 @Component({
   selector: 'app-profile-menu',

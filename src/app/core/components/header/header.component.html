@@ -1,0 +1,16 @@
+<mat-toolbar color="primary" class="mat-elevation-z6">
+  <mat-toolbar-row>
+    <object type="image/svg+xml" data="assets/icon.svg">Music Icon</object>
+    <span>
+      Ditto
+    </span>
+
+    <span class="fill"></span>
+
+    <app-profile-menu *ngIf="isLoggedIn$ | async; else login"></app-profile-menu>
+
+    <ng-template #login>
+      <button type="button" mat-button (click)="doLogin()" class="login-button">Login</button>
+    </ng-template>
+  </mat-toolbar-row>
+</mat-toolbar>

@@ -3,9 +3,9 @@ import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs/Observable';
 import { map } from 'rxjs/operators';
 
-import { Login } from '../../core/actions/user.actions';
-import { UserProfile } from '../../core/models/spotify/user-profile';
-import { State, selectUserProfile } from '../../core/reducers';
+import { Login } from '../../actions/user.actions';
+import { UserProfile } from '../../models/spotify/user-profile';
+import { State, selectUserProfile } from '../../reducers';
 
 @Component({
   selector: 'app-header',

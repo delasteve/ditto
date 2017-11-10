@@ -2,9 +2,9 @@ import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { MatIconModule, MatMenuModule } from '@angular/material';
 import { Store, StoreModule } from '@ngrx/store';
 
-import { Logout, ProfileLoaded } from '../../core/actions/user.actions';
-import { UserProfile } from '../../core/models/spotify/user-profile';
-import { State, reducers } from '../../core/reducers';
+import { Logout, ProfileLoaded } from '../../actions/user.actions';
+import { UserProfile } from '../../models/spotify/user-profile';
+import { State, reducers } from '../../reducers';
 import { ProfileMenuComponent } from './profile-menu.component';
 
 describe('ProfileMenuComponent', () => {
