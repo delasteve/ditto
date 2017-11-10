@@ -5,9 +5,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { Store, StoreModule } from '@ngrx/store';
 import { OAuthService } from 'angular-oauth2-oidc';
 
-import { Login, ProfileLoaded } from '../../core/actions/user.actions';
-import { UserProfile } from '../../core/models/spotify/user-profile';
-import { State, reducers } from '../../core/reducers';
+import { Login, ProfileLoaded } from '../../actions/user.actions';
+import { UserProfile } from '../../models/spotify/user-profile';
+import { State, reducers } from '../../reducers';
 import { HeaderComponent } from './header.component';
 
 describe('HeaderComponent', () => {

@@ -14,7 +14,6 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { UserEffects } from './core/effects/user.effects';
 import { reducers } from './core/reducers';
-import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   imports: [
@@ -29,7 +28,6 @@ import { SharedModule } from './shared/shared.module';
     environment.production ? [] : StoreDevtoolsModule.instrument({ maxAge: 25 }),
     OAuthModule.forRoot(),
     CoreModule.forRoot(),
-    SharedModule,
     AppRoutingModule,
   ],
   declarations: [
