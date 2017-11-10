@@ -1,4 +1,4 @@
 comment:
-  layout: "header, diff, files, footer"
+  layout: "header, diff"
   branches: null
   behavior: default
